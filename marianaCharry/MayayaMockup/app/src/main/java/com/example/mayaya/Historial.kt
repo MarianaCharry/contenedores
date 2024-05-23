@@ -1,33 +1,26 @@
 package com.example.mayaya
 
-import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.EditText
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class MainActivity : AppCompatActivity() {
+class Historial : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_historial)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.plainTextEmail)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-    }
-    fun cambioActivityLogin(view: View){
-        var intent= Intent(application,Login::class.java)
-        startActivity(intent)
-    }
+        var btnVolverH =findViewById<Button>(R.id.btnVolverH)
+        btnVolverH.setOnClickListener{
 
-    //segundo boton
-    fun cambioActivityHistorial(view: View){
-        var intent= Intent(application,Historial::class.java)
-        startActivity(intent)
+            finish()
+        }
     }
 }
