@@ -2,23 +2,77 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/plainTextEmail"
+    android:id="@+id/historial"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#33105D"
     tools:context=".Historial">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="411dp"
+        android:layout_height="279dp"
+        android:backgroundTint="#dbb6ee"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:fontFamily="sans-serif-black"
+            android:text="¿Qué paises tienen convenio con el Sena y para qué sirven?"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:translationY="170dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="46dp"
+            android:layout_height="44dp"
+            android:background="@drawable/heart_svgrepo_com"
+            android:text="Button"
+            android:translationX="270dp"
+            android:translationY="230dp"
+            app:iconTint="#ffffff" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="46dp"
+            android:layout_height="44dp"
+            android:background="@drawable/share_svgrepo_com"
+            android:text="Button"
+            android:translationX="310dp"
+            android:translationY="230dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="46dp"
+            android:layout_height="44dp"
+            android:background="@drawable/mas"
+            android:text="Button"
+            android:translationX="350dp"
+            android:translationY="230dp" />
+
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/btnVolverH"
-        android:layout_width="131dp"
-        android:layout_height="65dp"
-        android:text="Volver"
-        app:icon="@drawable/volver"
-        app:iconGravity="textEnd"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.044"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.024" />
+        app:layout_constraintVertical_bias="0.023" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

@@ -12,7 +12,7 @@ class Historial : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_historial)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.plainTextEmail)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.historial)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
