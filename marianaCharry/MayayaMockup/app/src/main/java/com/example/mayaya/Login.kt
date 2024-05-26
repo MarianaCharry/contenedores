@@ -1,6 +1,8 @@
 package com.example.mayaya
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,5 +24,14 @@ class Login : AppCompatActivity() {
 
             finish()
         }
+    }
+    fun cambioActivityMiPerfil(view: View){
+        var intent= Intent(application,MiPerfil::class.java)
+        startActivity(intent)
+    }
+
+    fun cambioLista(view: View){
+        var intent= Intent(application,lista::class.java)
+        startActivity(intent)
     }
 }
